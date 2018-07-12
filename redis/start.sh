@@ -3,8 +3,3 @@ docker run -v /opt/docker/redis/etc/redis.conf:/usr/local/etc/redis/redis.conf \
 --name redis \
 -d daocloud.io/library/redis:3.0-alpine \
 redis-server /usr/local/etc/redis/redis.conf
-docker run -v /opt/docker/redis/etc/redis.conf:/usr/local/etc/redis/redis.conf \
--p 16379:6379 \
---name redis-1 \
--d daocloud.io/library/redis:3.0-alpine \
-redis-server /usr/local/etc/redis/redis.conf
